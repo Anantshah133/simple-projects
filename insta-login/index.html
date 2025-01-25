@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+
+        .login-container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .left-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('./images/mobileImage.jpg') no-repeat center center;
+            background-size: contain;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .form-wrapper {
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-field {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #fafafa;
+        }
+
+        .login-button {
+            background: #0095f6;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .login-button:hover {
+            background: #0077cc;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+        }
+
+        .or-text {
+            padding: 0 10px;
+            color: #8e8e8e;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .fb-login-button {
+            background: #385185;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .fb-login-button:hover {
+            background: #2d3b6d;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            color: #385185;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+            }
+
+            .left-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="left-section">
+            <div class="mobile-view"></div>
+        </div>
+        <div class="right-section">
+            <div class="form-wrapper">
+                <img src="./images/instagramLogo.jpg" alt="Instagram Logo" class="logo">
+                <form class="login-form">
+                    <input type="text" placeholder="Phone number, username, or email" class="input-field">
+                    <input type="password" placeholder="Password" class="input-field">
+                    <button type="submit" class="login-button">Log In</button>
+                    <div class="divider">
+                        <span class="line"></span>
+                        <span class="or-text">OR</span>
+                        <span class="line"></span>
+                    </div>
+                    <button class="fb-login-button">Log in with Facebook</button>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
